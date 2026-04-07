@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Smoke Store | Premium Vape Lifestyle in Bengaluru</title>
+  <meta name="description" content="The Smoke Store is a premium vape lifestyle demo website from Bengaluru featuring futuristic product discovery, flavor exploration, and WhatsApp enquiries for adults 21+.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="home">
+  <div class="age-gate" id="ageGate" aria-hidden="true">
+    <div class="age-gate__backdrop"></div>
+    <div class="age-gate__panel glass-card">
+      <p class="eyebrow">21+ Access</p>
+      <h2>Age Verification</h2>
+      <p>You must be 21 years or older to enter this website.</p>
+      <div class="age-gate__actions">
+        <button class="btn btn-primary" id="ageConfirm">Enter (Yes I'm 21+)</button>
+        <a class="btn btn-secondary" href="https://www.google.com">Exit</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell glass-nav">
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span>The Smoke Store</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary nav-cta" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero hero--home">
+      <div class="hero__video-wrap">
+        <video class="hero__video" autoplay muted loop playsinline poster="images/hero/hero-smoke.svg">
+          <source src="https://cdn.coverr.co/videos/coverr-clouds-of-smoke-1562567483756?download=1080p" type="video/mp4">
+        </video>
+        <div class="hero__overlay"></div>
+        <div class="smoke smoke--one"></div>
+        <div class="smoke smoke--two"></div>
+      </div>
+      <div class="container hero__content">
+        <p class="eyebrow" data-reveal>Premium Vape Lifestyle | Bengaluru</p>
+        <h1 data-reveal>Elevate Your Experience</h1>
+        <p class="hero__lead" data-reveal>Premium flavors. Smooth performance. Designed for adults who appreciate design, atmosphere, and modern ritual.</p>
+        <div class="hero__actions" data-reveal>
+          <a class="btn btn-primary" href="products.html">Explore Collection</a>
+          <a class="btn btn-secondary" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27m%20interested%20in%20your%20collection." target="_blank" rel="noopener">Chat on WhatsApp</a>
+        </div>
+        <div class="hero__stats" data-reveal>
+          <div class="glass-card stat-card">
+            <strong>12+</strong>
+            <span>Curated devices and flavors</span>
+          </div>
+          <div class="glass-card stat-card">
+            <strong>21+</strong>
+            <span>Adult lifestyle focused experience</span>
+          </div>
+          <div class="glass-card stat-card">
+            <strong>Bengaluru</strong>
+            <span>Premium local brand presence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Featured Lineup</p>
+          <h2 data-reveal>Designed to Look as Good as It Performs</h2>
+        </div>
+        <a class="text-link" href="products.html" data-reveal>See all products</a>
+      </div>
+      <div class="container product-grid featured-grid" id="featuredProducts"></div>
+    </section>
+
+    <section class="section">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Shop by Category</p>
+          <h2 data-reveal>Find Your Format</h2>
+        </div>
+      </div>
+      <div class="container category-grid">
+        <article class="category-card glass-card" data-reveal>
+          <img src="images/products/real/iget-soul-b40000-mango-ice.webp" alt="Disposable Vapes">
+          <div>
+            <h3>Disposable Vapes</h3>
+            <p>Clean silhouettes, effortless use, and all-day flavor performance.</p>
+          </div>
+        </article>
+        <article class="category-card glass-card" data-reveal>
+          <img src="images/products/real/vaporesso-xros-2.jpg" alt="Pod Systems">
+          <div>
+            <h3>Pod Systems</h3>
+            <p>Refined hardware for everyday carry and elevated sessions.</p>
+          </div>
+        </article>
+        <article class="category-card glass-card" data-reveal>
+          <img src="images/products/real/iget-soul-b40000-strawberry-kiwi-ice.png" alt="E-Liquids">
+          <div>
+            <h3>E-Liquids</h3>
+            <p>Layered flavor profiles with smooth delivery and premium finish.</p>
+          </div>
+        </article>
+        <article class="category-card glass-card" data-reveal>
+          <img src="images/products/real/caliburn-g4-mini.webp" alt="Accessories">
+          <div>
+            <h3>Accessories</h3>
+            <p>Thoughtful add-ons that complete the modern setup.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-head section-head--center">
+        <p class="eyebrow" data-reveal>Why Choose Us</p>
+        <h2 data-reveal>Built Around Quality, Mood, and Trust</h2>
+      </div>
+      <div class="container icon-grid">
+        <article class="glass-card icon-card" data-reveal>
+          <span class="icon-card__icon">01</span>
+          <h3>Authentic Products</h3>
+          <p>Curated products selected for finish, consistency, and confidence.</p>
+        </article>
+        <article class="glass-card icon-card" data-reveal>
+          <span class="icon-card__icon">02</span>
+          <h3>Premium Quality</h3>
+          <p>Hardware and flavor choices that feel elevated from first touch.</p>
+        </article>
+        <article class="glass-card icon-card" data-reveal>
+          <span class="icon-card__icon">03</span>
+          <h3>Wide Flavor Range</h3>
+          <p>From iced fruit to rich dessert notes, every mood has a match.</p>
+        </article>
+        <article class="glass-card icon-card" data-reveal>
+          <span class="icon-card__icon">04</span>
+          <h3>Discreet Packaging</h3>
+          <p>Minimal presentation designed around privacy and convenience.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Flavor Experience</p>
+          <h2 data-reveal>Profiles for Every Vibe</h2>
+        </div>
+      </div>
+      <div class="container flavor-grid">
+        <article class="flavor-card flavor-card--fruity" data-reveal>
+          <h3>Fruity</h3>
+          <p>Bright mango, berry, lychee, and tropical blends with a juicy lift.</p>
+        </article>
+        <article class="flavor-card flavor-card--minty" data-reveal>
+          <h3>Minty</h3>
+          <p>Crisp finishes and icy airflow for a clean, refreshing pull.</p>
+        </article>
+        <article class="flavor-card flavor-card--dessert" data-reveal>
+          <h3>Dessert</h3>
+          <p>Creamy, sweet, and layered notes for late-night indulgence.</p>
+        </article>
+        <article class="flavor-card flavor-card--tobacco" data-reveal>
+          <h3>Tobacco</h3>
+          <p>Classic warmth with a smoother, more modern character.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonials-section">
+      <div class="container section-head">
+        <div>
+          <p class="eyebrow" data-reveal>Testimonials</p>
+          <h2 data-reveal>What the Experience Feels Like</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="testimonial-slider glass-card" id="testimonialSlider" data-reveal>
+          <div class="testimonial-slide is-active">
+            <p>“Best flavors I've tried in Bengaluru.”</p>
+            <span>Adult customer review</span>
+          </div>
+          <div class="testimonial-slide">
+            <p>“Super smooth vape experience.”</p>
+            <span>Design-conscious buyer</span>
+          </div>
+          <div class="testimonial-slide">
+            <p>“Premium feel and amazing taste.”</p>
+            <span>Weekend lifestyle user</span>
+          </div>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-panel glass-card" data-reveal>
+        <p class="eyebrow">Join the Experience</p>
+        <h2>Explore flavors, discover devices, and start the conversation.</h2>
+        <a class="btn btn-primary" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27d%20like%20to%20chat." target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <a class="sticky-whatsapp" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27d%20like%20to%20know%20more." target="_blank" rel="noopener">WhatsApp</a>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <span class="brand__mark"></span>
+          <span>The Smoke Store</span>
+        </a>
+        <p>Premium vape lifestyle demo for adults 21+ in Bengaluru, India.</p>
+      </div>
+      <div class="footer-links">
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/age-verification.js"></script>
+</body>
+</html>

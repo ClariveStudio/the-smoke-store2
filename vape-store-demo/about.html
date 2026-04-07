@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | The Smoke Store</title>
+  <meta name="description" content="Learn the story behind The Smoke Store, a premium vape lifestyle brand demo based in Bengaluru, India.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="about">
+  <div class="age-gate" id="ageGate" aria-hidden="true">
+    <div class="age-gate__backdrop"></div>
+    <div class="age-gate__panel glass-card">
+      <p class="eyebrow">21+ Access</p>
+      <h2>Age Verification</h2>
+      <p>You must be 21 years or older to enter this website.</p>
+      <div class="age-gate__actions">
+        <button class="btn btn-primary" id="ageConfirm">Enter (Yes I'm 21+)</button>
+        <a class="btn btn-secondary" href="https://www.google.com">Exit</a>
+      </div>
+    </div>
+  </div>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell glass-nav">
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span>The Smoke Store</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html" class="is-active">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary nav-cta" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27d%20love%20to%20learn%20more%20about%20your%20brand." target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--about">
+      <div class="container page-hero__content">
+        <p class="eyebrow" data-reveal>About The Brand</p>
+        <h1 data-reveal>Premium Vape Culture, Reimagined</h1>
+        <p data-reveal>The Smoke Store is a premium vape lifestyle brand based in Bengaluru, focused on high-quality devices, rich flavors, and a more modern adult experience.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container story-grid">
+        <div class="story-copy" data-reveal>
+          <p class="eyebrow">Our Story</p>
+          <h2>Built for people who care about atmosphere, detail, and design.</h2>
+          <p>We created this concept to feel less like a crowded catalog and more like a premium lifestyle brand. The Smoke Store brings together sleek devices, layered flavors, and a curated visual world that feels at home in nightlife, creative culture, and contemporary tech aesthetics.</p>
+          <p>From Bengaluru, the vision is simple: elevate the entire discovery experience with a cleaner interface, stronger storytelling, and products that feel intentional.</p>
+        </div>
+        <div class="story-media" data-reveal>
+          <div class="glass-card lifestyle-panel">
+            <img src="images/hero/hero-smoke.svg" alt="Lifestyle visual for The Smoke Store">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container lifestyle-grid">
+        <article class="glass-card lifestyle-card" data-reveal>
+          <h3>Design First</h3>
+          <p>Minimal interfaces, strong contrast, and tactile product presentation.</p>
+        </article>
+        <article class="glass-card lifestyle-card" data-reveal>
+          <h3>Flavor Driven</h3>
+          <p>Every product story begins with mood, texture, and sensory identity.</p>
+        </article>
+        <article class="glass-card lifestyle-card" data-reveal>
+          <h3>Community Energy</h3>
+          <p>A premium, adult-focused brand experience shaped around culture and connection.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <a class="sticky-whatsapp" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27d%20like%20to%20connect." target="_blank" rel="noopener">WhatsApp</a>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <span class="brand__mark"></span>
+          <span>The Smoke Store</span>
+        </a>
+        <p>Premium lifestyle demo designed for adults 21+.</p>
+      </div>
+      <div class="footer-links">
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/age-verification.js"></script>
+</body>
+</html>

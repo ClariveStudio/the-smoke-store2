@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details | The Smoke Store</title>
+  <meta name="description" content="View flavor notes, puff count, battery details, and premium product information for The Smoke Store demo lineup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="product-details">
+  <div class="age-gate" id="ageGate" aria-hidden="true">
+    <div class="age-gate__backdrop"></div>
+    <div class="age-gate__panel glass-card">
+      <p class="eyebrow">21+ Access</p>
+      <h2>Age Verification</h2>
+      <p>You must be 21 years or older to enter this website.</p>
+      <div class="age-gate__actions">
+        <button class="btn btn-primary" id="ageConfirm">Enter (Yes I'm 21+)</button>
+        <a class="btn btn-secondary" href="https://www.google.com">Exit</a>
+      </div>
+    </div>
+  </div>
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-shell glass-nav">
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span>The Smoke Store</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="is-active">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-primary nav-cta" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27m%20interested%20in%20a%20specific%20product." target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section product-detail-section">
+      <div class="container product-detail" id="productDetail"></div>
+    </section>
+  </main>
+
+  <a class="sticky-whatsapp" href="https://wa.me/919999999999?text=Hi%20The%20Smoke%20Store%2C%20I%27d%20like%20details%20about%20a%20product." target="_blank" rel="noopener">WhatsApp</a>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <a class="brand brand--footer" href="index.html">
+          <span class="brand__mark"></span>
+          <span>The Smoke Store</span>
+        </a>
+        <p>21+ only. Nicotine products are intended for adult consumers.</p>
+      </div>
+      <div class="footer-links">
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/age-verification.js"></script>
+</body>
+</html>
